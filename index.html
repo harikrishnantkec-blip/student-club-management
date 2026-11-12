@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Club Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <h2>🎓 CampusConnect</h2>
+    <span>Student Club Management System</span>
+</header>
+
+<div class="container">
+
+    <aside class="sidebar">
+        <h3>MENU</h3>
+        <a href="#dashboard">🏠 Dashboard</a>
+        <a href="#clubs">🎯 Explore Clubs</a>
+        <a href="#myclubs">⭐ My Clubs</a>
+        <a href="#events">📅 Events</a>
+        <a href="#addclub">➕ Add Club</a>
+    </aside>
+
+    <main class="main-content">
+
+        <section id="dashboard">
+            <h1>Welcome to CampusConnect!</h1>
+            <p>Discover clubs, connect with students and explore your interests.</p>
+
+            <div class="stats">
+                <div class="stat-card">
+                    <h2 id="totalClubs">0</h2>
+                    <p>Total Clubs</p>
+                </div>
+
+                <div class="stat-card">
+                    <h2 id="joinedClubs">0</h2>
+                    <p>My Clubs</p>
+                </div>
+
+                <div class="stat-card">
+                    <h2 id="totalEvents">3</h2>
+                    <p>Upcoming Events</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="clubs">
+            <h2>Explore Student Clubs</h2>
+
+            <input type="text" id="searchInput"
+                placeholder="Search clubs...">
+
+            <div id="clubList" class="club-grid"></div>
+        </section>
+
+        <section id="myclubs">
+            <h2>My Joined Clubs</h2>
+            <div id="myClubList" class="club-grid"></div>
+        </section>
+
+        <section id="events">
+            <h2>Upcoming Events</h2>
+
+            <div class="event-card">
+                <h3>💻 Coding Competition</h3>
+                <p>Date: 20 November 2026</p>
+                <p>Venue: Computer Lab</p>
+            </div>
+
+            <div class="event-card">
+                <h3>🎨 Art Exhibition</h3>
+                <p>Date: 25 November 2026</p>
+                <p>Venue: College Auditorium</p>
+            </div>
+
+            <div class="event-card">
+                <h3>🎵 Music Festival</h3>
+                <p>Date: 30 November 2026</p>
+                <p>Venue: Open Ground</p>
+            </div>
+        </section>
+
+        <section id="addclub">
+            <h2>Add a New Club</h2>
+
+            <form id="clubForm">
+                <input type="text" id="clubName"
+                    placeholder="Enter club name" required>
+
+                <input type="text" id="clubDescription"
+                    placeholder="Enter club description" required>
+
+                <button type="submit">Add Club</button>
+            </form>
+        </section>
+
+    </main>
+</div>
+
+<footer>
+    <p>© 2026 CampusConnect | Student Club Management System</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
